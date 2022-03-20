@@ -107,7 +107,7 @@
         const CAT3 = "https://cataas.com/cat/595f280b557291a9750ebf65/says/JavaScript";
         const [counter, setCounter] = React.useState(jsonLocalStorage.getItem("counter") || 1);
         const [mainCatImg, setMainCatImg] = React.useState(CAT1);
-        const [favorites, setFavorites] = React.useState(jsonLocalStorage.getItem("favorites") || []); // "|| []"안 쓰면 초기에 null값 들어가서 error남, = || 앞에 배열이 null값이면 뒤에 값을 넣어라
+        const [favorites, setFavorites] = React.useState(jsonLocalStorage.getItem("favorites") || []); // "|| []"안 쓰면 초기에 null값 들어가서 error남, = || 앞에 배열이 null값이면 뒤에 값을 넣어라아
 
         function updateMainCat() {
           setMainCatImg(CAT2);
